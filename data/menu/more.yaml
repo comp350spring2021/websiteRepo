@@ -1,0 +1,7 @@
+---
+more:
+  - name: View Source
+    ref: "https://github.com/comp350spring2021/SubmitterProject"
+    external: true
+    icon: "github"
+
