@@ -69,3 +69,5 @@ disablePathToLower = true
   # (Optional, default true) Enable or disable image lazy loading for images rendered
   # by the 'img' shortcode.
   geekdocImageLazyLoading = true
+  pygmentsUseClasses=true
+  pygmentsCodeFences=true
