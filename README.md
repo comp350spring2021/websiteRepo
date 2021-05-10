@@ -1,6 +1,8 @@
 # WebsiteRepo
 This is a git repository for a [Hugo](https://gohugo.io/) static site generator. Hugo makes building static websites easy and quick which is why it was chosen for the purpose of documentation. With hugo you can easily, pick a theme for your website, import some markdown files that will be the content of your website, and generate the static html,css and javascript files.
 
+Using a GitHub action we can automatically deploy the site files, to a GitHub pages repository. More information on this below.
+
 **To see the website that this Hugo project generates go here:** https://comp350spring2021.github.io/
 
 For more information on Hugo and its documentation click [here](https://gohugo.io/documentation/).
@@ -64,7 +66,7 @@ jobs:
           publish_branch: master
           publish_dir: ./public
 ```
-Whenever a push is made into the mastewr branch of this repository (websiteRepo), this action runs. Essentially what is happening is GitHub waits for a push, then spins up an ubuntu virtual machine and creates the Hugo project. Then it pushes the contents of the public directory into our GitHub pages repo (Comp350spring2021.github.io).
+Whenever a push is made into the master branch of this repository (websiteRepo), this action runs. Essentially what is happening is GitHub waits for a push, then spins up an ubuntu virtual machine and creates the Hugo project. Then it pushes the contents of the public directory into our GitHub pages repo (Comp350spring2021.github.io).
 
 More information about the actions used with this action at these links:
 
