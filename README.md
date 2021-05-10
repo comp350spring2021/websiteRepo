@@ -18,7 +18,7 @@ The content directory is where you put all of the markdown files that you want y
 
 ## Static Directory
 The static directory is where all of the static files are stored for your website. For this project the static folder only really holds pictures that need to be displayed around the website. To display a picture from your markdown file you can use the following line:   
-`[text](<subdirectoryName>/<pictureName>`  
+`[text](<subdirectoryName>/<pictureName>)`  
 Where the subdirectory anme is the name of a directory within your `static` directory.
 
 ## Building the Website

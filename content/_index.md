@@ -8,7 +8,7 @@
 
 {{<toc>}}
 
-The submitter is a web application implemented With AWS cloud services, designed to work as an automatice grader for python programming assignments. Designed and built in Spring 2021, for Software Engineering (Comp 350) at California State University Channel Islands, with Professor Soltys.
+The submitter is a web application implemented With AWS cloud services, designed to work as an automatic grader for python programming assignments. Designed and built in Spring 2021, for Software Engineering (Comp 350) at California State University Channel Islands, with Professor Soltys.
 
 ## Description
 The submitter project consists, of a website used by administrators to create **events**, either for a class or a competitive coding competition. Students, or participants can then submit answers to various **assignments** assoicated with an event. Admins can create an account, in order to create, and modify events, as well as monitor student submissions. 
