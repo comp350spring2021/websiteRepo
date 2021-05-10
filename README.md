@@ -1,7 +1,7 @@
 # WebsiteRepo
 This is a git repository for a [Hugo](https://gohugo.io/) static site generator. Hugo makes building static websites easy and quick which is why it was chosen for the purpose of documentation. With hugo you can easily, pick a theme for your website, import some markdown files that will be the content of your website, and generate the static html,css and javascript files.
 
-To see the website that this Hugo project generates go here: https://comp350spring2021.github.io/
+**To see the website that this Hugo project generates go here:** https://comp350spring2021.github.io/
 
 For more information on Hugo and its documentation click [here](https://gohugo.io/documentation/).
 
