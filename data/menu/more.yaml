@@ -4,4 +4,8 @@ more:
     ref: "https://github.com/comp350spring2021/SubmitterProject"
     external: true
     icon: "github"
+  - name: This Site's Repository
+    ref: "https://github.com/comp350spring2021/websiteRepo"
+    external: true
+    icon: "github"
 
