@@ -1,5 +1,5 @@
 baseURL = "http://comp350spring2021.github.io"
-title = "Submitter"
+title = "Submitter Documentation"
 theme = "hugo-geekdoc"
 
 pluralizeListTitles = false
