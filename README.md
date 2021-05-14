@@ -7,10 +7,10 @@ Using a GitHub action we can automatically deploy the site files, to a GitHub pa
 
 For more information on Hugo and its documentation click [here](https://gohugo.io/documentation/).
 
-I will give a brief overview of this repository and it's contentents:
+I will give a brief overview of this repository and it's contents, for a detailed writeup of Hugo and how to make changes to the documentation website checkout the [Hugo Tutorial](HugoTutorial.md)
 
 ## Config File
-The `config.toml` file is a configuration file for your Hugo project. In this file you can adjust settings to how you want your website to look and act. Also you will specify a theme for your website. To take a look at the themes click [here](https://themes.gohugo.io/).
+The `config.toml` file is a configuration file for your Hugo project. In this file you can adjust settings to how you want your website to look and act. Also you will specify a theme for your website. To take a look at the themes click [here](https://themes.gohugo.io/). If you like the look of the website the way it is now, then you probably won't need to change this very much.
 
 [This project uses the "Geekdoc" theme](https://themes.gohugo.io/hugo-geekdoc/)
 
@@ -24,6 +24,9 @@ The static directory is where all of the static files are stored for your websit
 Where the subdirectory anme is the name of a directory within your `static` directory.
 
 ## Building the Website
+
+Checkout my [Hugo tutorial here](HugoTutorial.md) for an in depth view of how to use this repository.
+
 In order to view how the website will look once generated, you can use the command `hugo server -D`. This will make the webserver availabe on the local host  on port 1313 by default. If you are satisfied with the way that your website looks, you can use command `hugo` to generate all of the HTML, CSS, and Javascript for your website, All of these files are placed within the `public/` directory.
 
 The public directory, is not present within this repository because it was added to the `.gitignore` file.
@@ -31,6 +34,8 @@ The public directory, is not present within this repository because it was added
 Once the website files are generated they can be deployed to a website hosting service. We use Github pages, in order to host our website (linked above). Rather than manually pushing all of the  files in the `public/` directory, into the GitHub pages website everytime we want to update the website, we have utilized github actions to automatically deploy the website when there is a push into the master branch of this repository.
 
 ## Github Action
+
+To learn how I got the GitHub Action to work click [here](GitHubActionDoc.md).
 
 This is our github action:
 ```
@@ -66,7 +71,7 @@ jobs:
           publish_branch: master
           publish_dir: ./public
 ```
-Whenever a push is made into the master branch of this repository (websiteRepo), this action runs. Essentially what is happening is GitHub waits for a push, then spins up an ubuntu virtual machine and creates the Hugo project. Then it pushes the contents of the public directory into our GitHub pages repo (Comp350spring2021.github.io).
+Whenever a push is made into the master branch of this repository (websiteRepo), this action runs. Essentially what is happening is GitHub waits for a push, then spins up an ubuntu machine and creates the Hugo project. Then it pushes the contents of the public directory into our GitHub pages repo (Comp350spring2021.github.io).
 
 More information about the actions used with this action at these links:
 
