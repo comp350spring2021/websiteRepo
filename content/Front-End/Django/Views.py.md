@@ -1,1 +1,0 @@
-Views within django are how the web server handles a response when a user visits on of the URL's. Each URL for the submitter website has a corresponding view, which can handle, POST or GET requests and respond with an HTML response.
